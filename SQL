@@ -1,0 +1,157 @@
+1)SQL SELECT statement:
+
+a)To select a single column:
+  SELECT column_name 
+  FROM table_name;
+  
+ b)To select a multiple column column:
+  SELECT column_name1, column_name2
+  FROM table_name;
+  
+ c)To select the entire table:
+  SELECT * 
+  FROM table_name;
+  
+2)SQL DISTINCT:
+The DISTINCT keyword is used in the SELECT statement to retrieve unique values from a database table.
+
+a)SELECT DISTINCT column_name
+FROM table_name;
+
+b)SELECT DISTINCT column_name1, column_name2
+FROM table_name;
+
+3)SQL WHERE clause:
+The WHERE clause is used to filter the result set based on the condition specified following the word WHERE.
+The WHERE clause can be used with the following types of SQL statements:
+1)SELECT 2)UPDATE  3)DELETE
+
+The syntax for using WHERE in the select statement:
+a)SELECT column_name
+  FROM table_name
+  WHERE condition;
+  
+The syntax for using WHERE in the UPDATE statement is as follows:  
+b)UPDATE column_name
+  SET column_name= NEW_VALUE
+  WHERE condition
+  
+ The syntax for using WHERE in the DELETE statement is as follows:
+c)DELETE FROM table_name
+  WHERE condition
+  
+4) SQL And and Or:
+ The keywords AND and OR are Boolean operators used to specify compound conditions in the WHERE clause.
+
+a)SELECT "column_name"
+  FROM "table_name"
+  WHERE "simple condition"
+  { [AND|OR] "simple condition"}+;
+  
+5)SQL - IN :
+
+The IN operator in SQL filters the result set based on a list of discrete values. The list of discrete values can be simply be listed out or is provided by a separate SELECT statement (this is called a subquery).
+******The IN operator is always used with the WHERE clause.
+a)SELECT column_name
+  FROM table_name
+  WHERE column_name IN(value1, value2) - Values can be numerical or string characters.
+ 
+6)SQL - BETWEEN
+
+The BETWEEN operator is used when the filtering criteria is a continuous range with a maximum value and a minimum value. It is always used in the WHERE clause.
+a) SELECT column_name
+   FROM table_name
+   WHERE column_name (NOT) BETWEEN (value 1 and value2)
+  
+7)SQL - WILDCARD
+
+Wildcards are used in SQL to match a string pattern. There are two types of wildcards:
+% (percent sign) represents zero, one, or more characters.
+_ (underscore) represents exactly one character.
+Wildcards are used with the LIKE operator in SQL.
+
+SQL- LIKE
+The LIKE operator is used to filter the result set based on a string pattern. It is always used in the WHERE clause.
+a) SELECT column_name
+   FROM table_name
+   WHERE column_name LIKE{pattern}
+   
+8)SQL- ORDERBY
+
+The ORDER BY command in SQL sorts the result set in either ascending or descending order. ORDER BY usually appears last in a SQL statement because it is performed after the result set has been retrieved.
+SELECT column_name
+FROM table_name
+WHERE condition
+ORDER BY column_name [ASC, DESC]
+
+9)SQL- GROUP BY
+
+The GROUP BY clause is used to tell SQL what level of granularity the aggregate function should be calculated in. The level of granularity is represented by the columns in the SELECT statement that are not aggregate functions.
+
+a) SELECT column_name1, function(column_name2)
+   FROM table_name
+   WHERE condition
+   Group BY column_name1
+   
+10) SQL -Having
+
+The HAVING clause is used to filter the result set based on the result of an aggregate function. It is typically located near or at the end of the SQL statement.
+HAVING is often coupled with the presence of the GROUP BY clause, although it is possible to have a HAVING clause without the GROUP BY clause.
+
+a) SELECT column_name1,function_type(column_name2)
+   FROM table_name
+   GROUP BY column_name
+   HAVING (arithmetic condition)
+
+11)SQL - Alias
+
+Alias refers to the practice of using a different temporary name to a database table or a column in a table.
+a)  SELECT table_alias.column_name , column_alias
+    FROM table_name table_alias
+    GROUP BY table_alias.column_name
+ 
+12)SQL - AS
+
+The keyword AS is used to assign an alias to the column or a table. It is inserted between the column name and the column alias or between the table name and the table alias.
+
+a)  SELECT table_alias.column_name AS column_alias
+    FROM table_name AS table_alias
+    
+13)SQL - UNIQUE
+
+The SELECT UNIQUE construct is an Oracle-only SQL statement. It is equivalent to SELECT DISTINCT.
+
+a)  SELECT UNIQUE column_name
+    FROM table_name
+    
+
+    
+ 
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+  
